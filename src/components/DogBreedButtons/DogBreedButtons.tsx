@@ -19,7 +19,6 @@ const DogBreedButtons = (props:DogBreedButtonsI) => {
         for(const props in dogs){
             if(dogs[props].length === 0){
                 dogsArray.push(props)
-                
             }else{
                 dogsArray.push(props)
                 dogs[props].map((elem:string) => {return dogsArray.push(`${props}-${elem}`)})
